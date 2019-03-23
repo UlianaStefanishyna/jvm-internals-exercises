@@ -1,4 +1,4 @@
-package benchmarking;
+package task.benchmarking;
 
 public class CustomBenchmark {
 }

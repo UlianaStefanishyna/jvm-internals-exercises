@@ -1,4 +1,4 @@
-package classloader;
+package task.classloader;
 
 public class CustomClassLoader {
 }

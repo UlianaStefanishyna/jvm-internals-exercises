@@ -1,4 +1,4 @@
-package proxy;
+package task.proxy;
 
 public class CustomProxy {
 }
