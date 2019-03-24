@@ -17,11 +17,10 @@ public class EnvVariableProxyReplacer implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        if(args.length > 0 && args[0] instanceof String && args[0].equals("server.port = ${port}")){
+        if (args.length > 0 && args[0] instanceof String && "server.port = ${port}".equals(args[0])) {
             String arg = (String) args[0];
             args[0] = arg.replace("${port}", this.port);
         }
-        String invoke = (String) method.invoke(textService, args);
-        return invoke;
+        return method.invoke(textService, args);
     }
 }
