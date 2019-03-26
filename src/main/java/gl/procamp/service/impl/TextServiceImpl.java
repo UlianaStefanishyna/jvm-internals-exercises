@@ -7,7 +7,7 @@ public class TextServiceImpl implements TextService {
 
     @Override
     public String staticText() {
-        return "HHHHH";
+        return "NEW";
     }
 
     @Override
