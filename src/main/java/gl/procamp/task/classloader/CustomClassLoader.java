@@ -1,4 +1,4 @@
-package task.classloader;
+package gl.procamp.task.classloader;
 
 import java.io.*;
 

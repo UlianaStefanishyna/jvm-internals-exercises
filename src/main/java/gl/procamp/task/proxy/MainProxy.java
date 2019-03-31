@@ -1,7 +1,7 @@
-package task.proxy;
+package gl.procamp.task.proxy;
 
-import service.TextService;
-import service.impl.TextServiceImpl;
+import gl.procamp.service.TextService;
+import gl.procamp.service.impl.TextServiceImpl;
 
 import java.lang.reflect.Proxy;
 

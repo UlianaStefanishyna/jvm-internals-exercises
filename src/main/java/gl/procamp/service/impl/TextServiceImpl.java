@@ -1,7 +1,7 @@
-package service.impl;
+package gl.procamp.service.impl;
 
-import exception.CustomRuntimeException;
-import service.TextService;
+import gl.procamp.exception.CustomRuntimeException;
+import gl.procamp.service.TextService;
 
 public class TextServiceImpl implements TextService {
 

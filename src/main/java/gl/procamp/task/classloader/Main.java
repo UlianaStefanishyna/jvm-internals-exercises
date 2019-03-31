@@ -1,6 +1,6 @@
-package task.classloader;
+package gl.procamp.task.classloader;
 
-import service.TextService;
+import gl.procamp.service.TextService;
 import java.lang.reflect.InvocationTargetException;
 
 public class Main {
@@ -8,7 +8,7 @@ public class Main {
 
         while (true) {
             CustomClassLoader customClassLoader = new CustomClassLoader();
-            Class aClass = customClassLoader.findClass("service.impl.TextServiceImpl");
+            Class aClass = customClassLoader.findClass("gl.procamp.service.impl.TextServiceImpl");
             TextService o = (TextService) aClass.getDeclaredConstructor().newInstance();
             String result = (String) aClass.getMethod("staticText").invoke(o);
             System.out.println(result);
